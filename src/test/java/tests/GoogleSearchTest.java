@@ -17,4 +17,14 @@ public class GoogleSearchTest extends CommonConditions{
         Assert.assertEquals(GOOGLE_PAGE_TITLE, actualTitle);
     }
 
+    @Test
+    public void openGoogleSearchPageFail() {
+        System.out.println("Browser: " + System.getProperty("browser"));
+
+        driver.get(GOOGLE_SEARCH_PAGE);
+        String actualTitle = driver.getTitle();
+
+        Assert.assertEquals("GOOGLE_PAGE_TITLE", actualTitle);
+    }
+
 }
