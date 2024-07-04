@@ -13,7 +13,7 @@ public class GoogleSearchTest extends CommonConditions{
 
         driver.get(GOOGLE_SEARCH_PAGE);
         String actualTitle = driver.getTitle();
-
+//asdasd
         Thread.sleep(1_000);
 
         Assert.assertEquals(GOOGLE_PAGE_TITLE, actualTitle);
